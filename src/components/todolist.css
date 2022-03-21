@@ -1,0 +1,21 @@
+.btn {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.form {
+  display: table-caption;
+}
+
+.form input {
+  margin-bottom: 14px;
+    height: 25px;
+    width: 450px;
+}
+
+.form textarea {
+  margin-bottom: 14px;
+  height: 95px;
+  width: 450px;
+}
+

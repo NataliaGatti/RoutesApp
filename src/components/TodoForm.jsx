@@ -3,6 +3,7 @@ import { useContext } from 'react';
 // import { StoreContext } from '../store/StoreProvider';
 // import { types } from '../store/storeReducer';
 import { TodoContext } from '../context/TodoContext';
+import styles from './todolist.css'
 
 const initialFormValue = {
     title: "",
@@ -39,7 +40,7 @@ export default function TodoForm() {
       };
 
     return (
-        <div>
+        <div className='form'>
           <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Titulo" 
             name="title" value={title}
@@ -48,7 +49,7 @@ export default function TodoForm() {
             name="description"  value={description}
             onChange={handleInputChange}>
            </textarea>
-           <button > agregar </button>
+           <button > Agregar Tarea </button>
           </form>
         </div>
     )

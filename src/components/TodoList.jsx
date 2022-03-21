@@ -5,7 +5,7 @@ import TodoForm from "./TodoForm";
 // import { StoreContext } from '../store/StoreProvider';
 // import { TodoState } from '../context/TodoState';
 import { TodoContext } from '../context/TodoContext';
-
+import styles from './todolist.css'
 
 function TodoList() {
 
@@ -29,7 +29,7 @@ function TodoList() {
          { todos.map((todo) => ( 
               <Todo todo={todo} key={todo.id} /> 
           )) }
-      <button onClick={ () => resetTodos() } >Reset All</button>
+      <button onClick={ () => resetTodos() } className="btn" >Reset All</button>
         <TodoForm />
     </div>
     
